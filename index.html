@@ -17,10 +17,12 @@
   <body ng-controller="MainCtrl">
     <div class="panel panel-default">
       <div class="panel-body">
-        <google-map control="map.control" center="map.center" zoom="map.zoom">
-          <marker coords="marker.center"></marker>
+
+        <google-map control="map.control" center="map.center" zoom="map.zoom">        
+          <markers models="markers" coords="'coords'"></markers>
         </google-map>
-        <form class="form-horizontal" role="form">
+
+        <!--<form class="form-horizontal" role="form">
           <div class="form-group">
             <label for="origin" class="col-sm-2 control-label">Origin</label>
             <div class="col-sm-8">
@@ -40,7 +42,7 @@
           </div>
         </form>
         
-        <div id="directionsList" ng-show="directions.showList" class="panel panel-primary"></div>
+        <div id="directionsList" ng-show="directions.showList" class="panel panel-primary"></div> -->
       </div>
     </div>
   </body>
